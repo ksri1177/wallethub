@@ -27,13 +27,13 @@ package selenium003;
 		public void loginpass() {
 	    driver.findElement(By.id("email")).sendKeys(userName);
 	    driver.findElement(By.id("pass")).sendKeys(password);
-	    driver.findElement(By.id("loginbutton")).click();
+	    driver.findElement(By.id("u_0_v")).click();
 	}
 
 
 	@Test
 	public void postmessage() {
-		driver.findElement(By.xpath("message")).sendKeys("Hello World");
+		driver.findElement(By.xpath("//*[@id="mount_0_0"]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div/div[1]/span")).sendKeys("Hello World");
 	}
 
 	@AfterMethod
